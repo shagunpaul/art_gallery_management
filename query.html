@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2 style="font-family:Comic Sans MS;"><center><font size="+4" color="white">QUERIES</font></center></h2>
+<form action="q1.php" method="POST">
+<button class="button" style="vertical-align:middle"><span>query1</span></button><br>
+</form>
+
+<form action="q2.php" method="POST">
+<button class="button" style="vertical-align:middle"><span>query2</span></button><br>
+</form>
+
+<form action="q3.php" method="POST">
+<button class="button" style="vertical-align:middle"><span>query3</span></button><br>
+</form>
+
+<form action="q4.php" method="POST">
+<button class="button" style="vertical-align:middle"><span>query4</span></button><br>
+</form>
+
+<form action="q5.php" method="POST">
+<button class="button" style="vertical-align:middle"><span>query5</span></button><br>
+</form>
+
+</body>
+</html>
